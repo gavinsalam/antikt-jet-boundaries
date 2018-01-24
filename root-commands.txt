@@ -1,0 +1,136 @@
+.L jet-plots.C
+C = showjets("files/dR-0.750-pt2-005.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 0.50, p_{t1} = 100GeV, p_{t2} = 5GeV")
+C->Print("plots/dR-0.750-pt2-005.pdf");
+delete C;
+C = showjets("files/dR-0.750-pt2-025.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 0.50, p_{t1} = 100GeV, p_{t2} = 25GeV")
+C->Print("plots/dR-0.750-pt2-025.pdf");
+delete C;
+C = showjets("files/dR-0.750-pt2-050.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 0.50, p_{t1} = 100GeV, p_{t2} = 50GeV")
+C->Print("plots/dR-0.750-pt2-050.pdf");
+delete C;
+C = showjets("files/dR-0.750-pt2-075.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 0.50, p_{t1} = 100GeV, p_{t2} = 75GeV")
+C->Print("plots/dR-0.750-pt2-075.pdf");
+delete C;
+C = showjets("files/dR-0.750-pt2-099.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 0.50, p_{t1} = 100GeV, p_{t2} = 99GeV")
+C->Print("plots/dR-0.750-pt2-099.pdf");
+delete C;
+C = showjets("files/dR-1.050-pt2-005.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 0.70, p_{t1} = 100GeV, p_{t2} = 5GeV")
+C->Print("plots/dR-1.050-pt2-005.pdf");
+delete C;
+C = showjets("files/dR-1.050-pt2-025.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 0.70, p_{t1} = 100GeV, p_{t2} = 25GeV")
+C->Print("plots/dR-1.050-pt2-025.pdf");
+delete C;
+C = showjets("files/dR-1.050-pt2-050.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 0.70, p_{t1} = 100GeV, p_{t2} = 50GeV")
+C->Print("plots/dR-1.050-pt2-050.pdf");
+delete C;
+C = showjets("files/dR-1.050-pt2-075.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 0.70, p_{t1} = 100GeV, p_{t2} = 75GeV")
+C->Print("plots/dR-1.050-pt2-075.pdf");
+delete C;
+C = showjets("files/dR-1.050-pt2-099.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 0.70, p_{t1} = 100GeV, p_{t2} = 99GeV")
+C->Print("plots/dR-1.050-pt2-099.pdf");
+delete C;
+C = showjets("files/dR-1.350-pt2-005.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 0.90, p_{t1} = 100GeV, p_{t2} = 5GeV")
+C->Print("plots/dR-1.350-pt2-005.pdf");
+delete C;
+C = showjets("files/dR-1.350-pt2-025.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 0.90, p_{t1} = 100GeV, p_{t2} = 25GeV")
+C->Print("plots/dR-1.350-pt2-025.pdf");
+delete C;
+C = showjets("files/dR-1.350-pt2-050.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 0.90, p_{t1} = 100GeV, p_{t2} = 50GeV")
+C->Print("plots/dR-1.350-pt2-050.pdf");
+delete C;
+C = showjets("files/dR-1.350-pt2-075.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 0.90, p_{t1} = 100GeV, p_{t2} = 75GeV")
+C->Print("plots/dR-1.350-pt2-075.pdf");
+delete C;
+C = showjets("files/dR-1.350-pt2-099.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 0.90, p_{t1} = 100GeV, p_{t2} = 99GeV")
+C->Print("plots/dR-1.350-pt2-099.pdf");
+delete C;
+C = showjets("files/dR-1.650-pt2-005.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.10, p_{t1} = 100GeV, p_{t2} = 5GeV")
+C->Print("plots/dR-1.650-pt2-005.pdf");
+delete C;
+C = showjets("files/dR-1.650-pt2-025.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.10, p_{t1} = 100GeV, p_{t2} = 25GeV")
+C->Print("plots/dR-1.650-pt2-025.pdf");
+delete C;
+C = showjets("files/dR-1.650-pt2-050.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.10, p_{t1} = 100GeV, p_{t2} = 50GeV")
+C->Print("plots/dR-1.650-pt2-050.pdf");
+delete C;
+C = showjets("files/dR-1.650-pt2-075.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.10, p_{t1} = 100GeV, p_{t2} = 75GeV")
+C->Print("plots/dR-1.650-pt2-075.pdf");
+delete C;
+C = showjets("files/dR-1.650-pt2-099.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.10, p_{t1} = 100GeV, p_{t2} = 99GeV")
+C->Print("plots/dR-1.650-pt2-099.pdf");
+delete C;
+C = showjets("files/dR-1.950-pt2-005.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.30, p_{t1} = 100GeV, p_{t2} = 5GeV")
+C->Print("plots/dR-1.950-pt2-005.pdf");
+delete C;
+C = showjets("files/dR-1.950-pt2-025.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.30, p_{t1} = 100GeV, p_{t2} = 25GeV")
+C->Print("plots/dR-1.950-pt2-025.pdf");
+delete C;
+C = showjets("files/dR-1.950-pt2-050.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.30, p_{t1} = 100GeV, p_{t2} = 50GeV")
+C->Print("plots/dR-1.950-pt2-050.pdf");
+delete C;
+C = showjets("files/dR-1.950-pt2-075.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.30, p_{t1} = 100GeV, p_{t2} = 75GeV")
+C->Print("plots/dR-1.950-pt2-075.pdf");
+delete C;
+C = showjets("files/dR-1.950-pt2-099.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.30, p_{t1} = 100GeV, p_{t2} = 99GeV")
+C->Print("plots/dR-1.950-pt2-099.pdf");
+delete C;
+C = showjets("files/dR-2.250-pt2-005.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.50, p_{t1} = 100GeV, p_{t2} = 5GeV")
+C->Print("plots/dR-2.250-pt2-005.pdf");
+delete C;
+C = showjets("files/dR-2.250-pt2-025.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.50, p_{t1} = 100GeV, p_{t2} = 25GeV")
+C->Print("plots/dR-2.250-pt2-025.pdf");
+delete C;
+C = showjets("files/dR-2.250-pt2-050.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.50, p_{t1} = 100GeV, p_{t2} = 50GeV")
+C->Print("plots/dR-2.250-pt2-050.pdf");
+delete C;
+C = showjets("files/dR-2.250-pt2-075.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.50, p_{t1} = 100GeV, p_{t2} = 75GeV")
+C->Print("plots/dR-2.250-pt2-075.pdf");
+delete C;
+C = showjets("files/dR-2.250-pt2-099.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.50, p_{t1} = 100GeV, p_{t2} = 99GeV")
+C->Print("plots/dR-2.250-pt2-099.pdf");
+delete C;
+C = showjets("files/dR-2.550-pt2-005.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.70, p_{t1} = 100GeV, p_{t2} = 5GeV")
+C->Print("plots/dR-2.550-pt2-005.pdf");
+delete C;
+C = showjets("files/dR-2.550-pt2-025.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.70, p_{t1} = 100GeV, p_{t2} = 25GeV")
+C->Print("plots/dR-2.550-pt2-025.pdf");
+delete C;
+C = showjets("files/dR-2.550-pt2-050.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.70, p_{t1} = 100GeV, p_{t2} = 50GeV")
+C->Print("plots/dR-2.550-pt2-050.pdf");
+delete C;
+C = showjets("files/dR-2.550-pt2-075.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.70, p_{t1} = 100GeV, p_{t2} = 75GeV")
+C->Print("plots/dR-2.550-pt2-075.pdf");
+delete C;
+C = showjets("files/dR-2.550-pt2-099.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.70, p_{t1} = 100GeV, p_{t2} = 99GeV")
+C->Print("plots/dR-2.550-pt2-099.pdf");
+delete C;
+C = showjets("files/dR-2.850-pt2-005.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.90, p_{t1} = 100GeV, p_{t2} = 5GeV")
+C->Print("plots/dR-2.850-pt2-005.pdf");
+delete C;
+C = showjets("files/dR-2.850-pt2-025.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.90, p_{t1} = 100GeV, p_{t2} = 25GeV")
+C->Print("plots/dR-2.850-pt2-025.pdf");
+delete C;
+C = showjets("files/dR-2.850-pt2-050.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.90, p_{t1} = 100GeV, p_{t2} = 50GeV")
+C->Print("plots/dR-2.850-pt2-050.pdf");
+delete C;
+C = showjets("files/dR-2.850-pt2-075.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.90, p_{t1} = 100GeV, p_{t2} = 75GeV")
+C->Print("plots/dR-2.850-pt2-075.pdf");
+delete C;
+C = showjets("files/dR-2.850-pt2-099.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 1.90, p_{t1} = 100GeV, p_{t2} = 99GeV")
+C->Print("plots/dR-2.850-pt2-099.pdf");
+delete C;
+C = showjets("files/dR-3.150-pt2-005.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 2.10, p_{t1} = 100GeV, p_{t2} = 5GeV")
+C->Print("plots/dR-3.150-pt2-005.pdf");
+delete C;
+C = showjets("files/dR-3.150-pt2-025.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 2.10, p_{t1} = 100GeV, p_{t2} = 25GeV")
+C->Print("plots/dR-3.150-pt2-025.pdf");
+delete C;
+C = showjets("files/dR-3.150-pt2-050.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 2.10, p_{t1} = 100GeV, p_{t2} = 50GeV")
+C->Print("plots/dR-3.150-pt2-050.pdf");
+delete C;
+C = showjets("files/dR-3.150-pt2-075.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 2.10, p_{t1} = 100GeV, p_{t2} = 75GeV")
+C->Print("plots/dR-3.150-pt2-075.pdf");
+delete C;
+C = showjets("files/dR-3.150-pt2-099.dat","anti-k_{t}, R=1.5, #Delta R_{12}/R = 2.10, p_{t1} = 100GeV, p_{t2} = 99GeV")
+C->Print("plots/dR-3.150-pt2-099.pdf");
+delete C;
