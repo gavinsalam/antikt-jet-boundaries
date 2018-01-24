@@ -1,7 +1,12 @@
 #!/usr/bin/env python
 """
-Script to produce files for illustrating jet shape 
+Script to produce files for illustrating jet boundaries with the anti-kt
+algorithm, as a function of the kinematics of the particles being
+clustered. 
 """
+# author: Gavin P. Salam, 2018
+# released under the terms of the GPLv3
+
 from __future__ import print_function, division
 import os
 import subprocess
@@ -14,14 +19,15 @@ FJBUILD=os.environ["HOME"]+"/work/fastjet/fastjet-release/"
 fjexec=FJBUILD+"/example/fastjet_timing_plugins"
 
 def main():
+    # set up the kinematics of the particles
     R   = 1.5
     pt1 = 100
     dRvals = [0.1*R*i for i in range(5,22,2)]
     pt2vals = [5, 25, 50, 75, 99]
-    #dRvals = [0.5*R]
-    #pt2vals = [25]
 
+    # we'll store root commands here and then use them later
     root_commands = [".L jet-plots.C"]
+
 
     for dR in dRvals:
         for pt2 in pt2vals:
@@ -38,17 +44,20 @@ def main():
             for pi in [p1,p2]:
                 p.stdin.write(pi.__str__() + "\n")
             p.stdin.close()
-            root_commands.append('C = showjets("{}","{}")'.format(
-                          outfile,
-                          "anti-k_{{t}}, R={}, #Delta R_{{12}}/R = {:4.2f}, p_{{t1}} = {}GeV, p_{{t2}} = {}GeV".format(R, dR/R, pt1, pt2)))
+
+            # then generate the root commands for displaying this
+            # kinematics configuration
+            label = "anti-k_{{t}}, R={}, #Delta R_{{12}}/R = {:4.2f}, p_{{t1}} = {}GeV, p_{{t2}} = {}GeV".format(R, dR/R, pt1, pt2)
+            root_commands.append('C = showjets("{}","{}")'.format( outfile, label))
             root_commands.append('C->Print("{}");'.format(outpdf))
             root_commands.append('delete C;')
 
-    # now prepare root to generate pdf files from the results
+    # now prepare a file to be read from root
     rc = open('root-commands.txt','w')
     print ("\n".join(root_commands), file=rc)
     rc.close()
 
+    # and run root
     subprocess.call("root -b < root-commands.txt", shell=True)
 
 
@@ -78,4 +87,3 @@ def PtRapPhiM(pt, rap, phi, m = 0):
 
 
 if __name__ == '__main__': main()
-# 

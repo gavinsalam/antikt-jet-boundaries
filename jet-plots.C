@@ -5,6 +5,8 @@
 /// root> .L jet-plots.C+
 /// root> showjets(filename [, label])
 ///
+/// This file is taken from the main fastjet distribution
+/// authors: Matteo Cacciari, Gavin P. Salam, Gregory Soyez
 #include<vector>
 #include<fstream>
 #include<iostream>
